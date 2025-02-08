@@ -9,9 +9,9 @@ Portflow is a full-stack web application built using **React (TSX), TypeScript, 
 ## **🚀 Features**
 - 🏗 **Frontend**: Built with **React (TSX) & TypeScript** for a type-safe and scalable UI.  
 - ⚙️ **Backend**: Powered by **Node.js** with Express.js for API handling.  
-- 🗄 **Database**: Uses **PostgreSQL/MongoDB** (mention the database you're using).  
+- 🗄 **Database**: Uses **MongoDB**   
 - 🎨 **Styling**: Tailwind CSS for a modern and responsive design.  
-- 🔐 **Authentication**: Implements secure authentication (JWT or OAuth if used).  
+- 🔐 **Authentication**: Implements secure authentication (JWT and OAuth).  
 - 🌍 **Deployment**: Hosted on **Vercel/Netlify for frontend and Render/DigitalOcean for backend**.  
 
 ---
