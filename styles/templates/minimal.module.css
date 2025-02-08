@@ -1,0 +1,219 @@
+.container {
+  min-height: 100vh;
+  background-color: #c79d7f;
+  color: #000000;
+  font-family: "Inter", sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  perspective: 1000px;
+}
+
+.nav-button {
+  background-color: #d9d9d9;
+  transition: all 0.3s ease;
+  border: none;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.nav-button:hover,
+.nav-button:focus {
+  background-color: #c58f73;
+  outline: none;
+}
+
+.heading {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+}
+
+.content {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.specialization-input {
+  background: transparent;
+  border: 1px solid transparent;
+  padding: 0.5rem;
+  width: 100%;
+  transition: all 0.3s ease;
+  transform-style: preserve-3d;
+}
+
+.specialization-input:hover,
+.specialization-input:focus {
+  border-color: #c58f73;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateZ(10px);
+}
+
+.before-after-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.before-after-item {
+  position: relative;
+}
+
+.before-after-label {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  background-color: #c58f73;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.section {
+  margin-bottom: 4rem;
+}
+
+.section-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.dropzone {
+  border: 2px dashed #c58f73;
+  border-radius: 4px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dropzone:hover {
+  background-color: rgba(197, 143, 115, 0.1);
+}
+
+.dropzone-active {
+  border-color: #c58f73;
+  background-color: rgba(197, 143, 115, 0.2);
+}
+
+.hey-there-3d {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+
+.hey-there-3d:hover {
+  transform: perspective(500px) rotateY(15deg) translateZ(20px);
+}
+
+.hey-there-3d::before,
+.hey-there-3d::after {
+  content: "Hey, There";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.hey-there-3d::before {
+  transform: translateZ(-10px);
+  color: rgba(197, 143, 115, 0.3);
+}
+
+.hey-there-3d::after {
+  transform: translateZ(20px);
+  color: rgba(197, 143, 115, 0.6);
+}
+
+.hey-there-3d:hover::before {
+  transform: translateZ(-20px) rotateY(-15deg);
+}
+
+.hey-there-3d:hover::after {
+  transform: translateZ(40px) rotateY(-15deg);
+}
+
+.dark {
+  background-color: #2c2c2c;
+  color: #ffffff;
+}
+
+.dark .nav-button {
+  background-color: #3a3a3a;
+  color: #ffffff;
+}
+
+.dark .nav-button:hover,
+.dark .nav-button:focus {
+  background-color: #4a4a4a;
+}
+
+.dark .specialization-input {
+  color: #ffffff;
+}
+
+.dark .specialization-input:hover,
+.dark .specialization-input:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.image-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.floating {
+  animation: float 3s ease-in-out infinite;
+}
+
+.skills-container {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.skill-item {
+  transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateZ(20px) scale(1.05);
+}
+

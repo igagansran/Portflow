@@ -1,0 +1,47 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: "Inter", sans-serif;
+}
+
+.container h1,
+.container h2 {
+  font-family: "Playfair Display", serif;
+}
+
+.container header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.container section {
+  margin-bottom: 4rem;
+}
+
+.container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.container li {
+  margin-bottom: 0.5rem;
+}
+
+.container #portfolio,
+.container #skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.container #contact {
+  text-align: center;
+}
+
